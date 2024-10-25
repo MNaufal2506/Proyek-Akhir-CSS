@@ -6,10 +6,16 @@
   font-family: "Inter", "sans-serif";
 }
 
+#slicing{
+  background: rgb(164,214,255);
+background: linear-gradient(0deg, rgba(164,214,255,1) 17%, rgba(18,140,236,1) 60%);
+}
+
 #nav-d {
+  margin-bottom: 600px;
   position: sticky;
   top: 0px;
-  background-color: #2c9bf3;
+  /* background-color: #2c9bf3; */
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 
@@ -71,3 +77,46 @@
 .button-register:hover {
   background-color: rgb(18, 84, 189);
 }
+
+
+.bungkus{
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  margin-top: -400px;
+  margin-bottom: 300px;
+  h1{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .red{
+    color: red;
+  }
+  p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    
+  }
+  .btbt{
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: 20px 30px;
+    background: rgb(255,2,2);
+    background: linear-gradient(96deg, rgba(255,2,2,1) 31%, rgba(255,85,0,1) 67%);
+    color: white;
+  }
+}
+
+.image{
+  margin-top: -365px;
+  img{
+    width: 500px;
+  }
+}
+
+

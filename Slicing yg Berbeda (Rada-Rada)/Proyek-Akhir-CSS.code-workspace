@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../CSS/Ujian Slicing"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Proyek-Akhir-CSS"
+  }
+}
