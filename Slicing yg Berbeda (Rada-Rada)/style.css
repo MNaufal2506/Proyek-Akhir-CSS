@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
   margin: 0;
@@ -6,16 +7,33 @@
   font-family: "Inter", "sans-serif";
 }
 
-#slicing{
-  background: rgb(164,214,255);
-background: linear-gradient(0deg, rgba(164,214,255,1) 17%, rgba(18,140,236,1) 60%);
+#slicing {
+  margin-top: -110px;
+  padding-top: 250px;
+  background: rgb(164, 214, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(164, 214, 255, 1) 17%,
+    rgba(18, 140, 236, 1) 60%
+  );
 }
 
 #nav-d {
-  margin-bottom: 600px;
+  z-index: 5;
+  /* margin-bottom: 600px; */
   position: sticky;
   top: 0px;
-  /* background-color: #2c9bf3; */
+  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* background-color:  rgba(18, 140, 236, 1) ; */
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 
@@ -28,6 +46,7 @@ background: linear-gradient(0deg, rgba(164,214,255,1) 17%, rgba(18,140,236,1) 60
   justify-content: space-evenly;
   height: 100px;
   align-items: center;
+
   /* background-color: antiquewhite; */
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
@@ -38,6 +57,7 @@ background: linear-gradient(0deg, rgba(164,214,255,1) 17%, rgba(18,140,236,1) 60
   font-size: 40px;
   font-weight: 700;
   align-items: center;
+  color: white;
 }
 
 .logo-header img {
@@ -56,67 +76,390 @@ background: linear-gradient(0deg, rgba(164,214,255,1) 17%, rgba(18,140,236,1) 60
   list-style: none;
   margin-left: 15px;
   margin-right: 30px;
+  
+}
+
+.list-navigasi li:hover{
+  color: white;
+  font-weight: 900;
 }
 
 .spesifik-button {
   margin-left: 350px;
   margin-right: -200px;
-  background: rgb(132, 199, 255);
+  background: rgb(44, 155, 243);
   background: linear-gradient(
-    201deg,
-    rgb(107, 185, 249) 23%,
-    rgb(24, 146, 240) 54%
+    39deg,
+    rgba(44, 155, 243, 1) 47%,
+    rgba(153, 198, 233, 1) 80%
   );
   border: none;
   color: white;
   font-size: 14px;
   padding: 15px 30px;
   border-radius: 30px;
-}
-
-.button-register:hover {
-  background-color: rgb(18, 84, 189);
+  border: solid 0.1px white;
 }
 
 
-.bungkus{
+
+/* #banner-1{
+  margin-top: -50px;
+} */
+
+.bungkus {
   display: flex;
   justify-content: center;
 }
 
-.text{
-  margin-top: -400px;
+.text {
+  /* margin-top: -400px; */
   margin-bottom: 300px;
-  h1{
+  .samudra {
+    font-weight: bold;
     font-size: 60px;
     color: white;
     margin-bottom: 30px;
   }
-  .red{
+  .red {
     color: red;
   }
-  p{
+  .p-banner {
     font-size: 20px;
     color: white;
     margin-bottom: 30px;
-    
   }
-  .btbt{
+  .btbt {
     font-size: 20px;
     border: none;
     border-radius: 25px;
     padding: 20px 30px;
-    background: rgb(255,2,2);
-    background: linear-gradient(96deg, rgba(255,2,2,1) 31%, rgba(255,85,0,1) 67%);
+    background: rgb(255, 2, 2);
+    background: linear-gradient(
+      96deg,
+      rgba(255, 2, 2, 1) 31%,
+      rgba(255, 85, 0, 1) 67%
+    );
     color: white;
   }
 }
 
-.image{
-  margin-top: -365px;
-  img{
-    width: 500px;
+.image {
+  margin-left: -250px;
+  margin-top: 60px;
+  img {
+    width: 550px;
   }
 }
 
+#fitur {
+  margin-bottom: 200px;
+}
 
+.container-fitur {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  justify-content: center;
+  border-radius: 40px;
+  margin-top: -130px;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-right: 250px;
+  margin-left: 250px;
+  height: 630px;
+  padding-top: 20px;
+
+  h2 {
+    font-weight: 2000;
+    font-size: 40px;
+    font-family: "Cabin";
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .red {
+    color: red;
+  }
+}
+
+.image-fitur {
+  justify-content: center;
+  width: 800px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: -60px;
+  /* background-color: red; */
+
+  img {
+    width: 134px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.cs-about {
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin";
+  color: #65b8fb;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-left: 825px;
+  margin-right: 825px;
+  padding: 12px 40px;
+  border-radius: 20px;
+}
+
+#about {
+  background: rgb(44, 155, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(44, 155, 243, 1) 27%,
+    rgba(255, 255, 255, 1) 77%
+  );
+
+  /* margin: 100px; */
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.text {
+  margin-right: 250px;
+  font-family: "Cabin";
+  .arung {
+    font-family: "Cabin";
+    font-size: 50px;
+    span {
+      color: red;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 30px;
+    word-spacing: 4px;
+    letter-spacing: 1;
+  }
+}
+
+.container-lm {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-top: 200px;
+}
+
+#ngebungkus-dua {
+  background: rgb(76, 167, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(76, 167, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 73%
+  );
+  padding-bottom: 80px;
+}
+
+.img-lm {
+  img {
+    width: 530px;
+  }
+}
+
+#data {
+  background: rgb(44, 155, 243);
+  background: linear-gradient(
+    0deg,
+    rgba(44, 155, 243, 1) 0%,
+    rgba(76, 167, 238, 1) 62%
+  );
+  padding-bottom: 150px;
+}
+
+.T {
+  text-align: center;
+  margin-bottom: 130px;
+  h2 {
+    margin-bottom: 28px;
+    font-size: 50px;
+    font-family: "Cabin";
+    color: white;
+    span {
+      color: red;
+    }
+  }
+  p {
+    font-family: "Cabin";
+    font-size: 30px;
+    color: white;
+    margin-bottom: 158px;
+  }
+}
+
+.G {
+  img {
+    width: 480px;
+    margin: 10px;
+  }
+}
+
+.g-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.g-2 {
+  display: flex;
+  justify-content: center;
+}
+
+#TkB {
+  /* margin-bottom: 200px; */
+  padding-bottom: 200px;
+  background: rgb(133, 199, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(133, 199, 251, 1) 28%,
+    rgba(44, 155, 243, 1) 100%
+  );
+}
+
+.container-tkb {
+  text-align: center;
+
+  h2 {
+    font-size: 50px;
+    font-family: "Cabin";
+    color: white;
+    margin-bottom: 40px;
+    span {
+      color: red;
+    }
+  }
+  p {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 90px;
+  }
+
+  button {
+    color: white;
+    background: rgb(255, 2, 2);
+    background: linear-gradient(
+      96deg,
+      rgba(255, 2, 2, 1) 31%,
+      rgba(255, 85, 0, 1) 67%
+    );
+    text-align: center;
+    padding: 20px 45px 20px 45px;
+    font-size: 30px;
+    border-radius: 32px;
+    font-family: "Cabin";
+    font-weight: 500;
+    border: none;
+    img {
+      margin-bottom: -10px;
+      margin-left: 20px;
+      width: 40px;
+    }
+  }
+}
+
+#LG-MGR {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px;
+  background: rgb(242,244,247);
+  background: linear-gradient(0deg, rgba(242,244,247,1) 0%, rgba(133,199,251,1) 48%);
+
+  span {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Cabin";
+    color: #65b8fb;
+    font-size: 20px;
+    font-weight: 700;
+    width: 215px;
+    margin-left: 150px;
+    padding: 12px 40px;
+    border-radius: 20px;
+  }
+}
+
+.iy {
+  margin-top: -75px;
+  img {
+    width: 1000px;
+    /* margin-left: 100px; */
+  }
+}
+
+.satu-lg {
+  margin-top: 100px;
+  margin-left: -30px;
+
+  img {
+    width: 300px;
+  }
+}
+
+#kt-mrk{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #F2F4F7
+  ;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  margin-bottom: 3000px;
+  
+}
+
+.gb-2{
+  background-color: white;
+  box-shadow: 0px 142px 400px 0px rgba(218,220,222,0.75);
+  -webkit-box-shadow: 0px 142px 400px 0px rgba(218,220,222,0.75);
+  -moz-box-shadow: 0px 142px 400px 0px rgba(218,220,222,0.75);    
+  padding: 0px 500px;
+
+  h1{
+    font-size: 50px;
+    margin-top:  20px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+
+.it {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin";
+  color: #65b8fb;
+  font-size: 20px;
+  font-weight: 700;
+  width: 215px;
+  margin-left: 500px;
+  padding: 12px 40px;
+  border-radius: 20px;
+  margin-top: -30px;
+}
+
+.img-gb img{
+  width: 100%;
+  margin-bottom: -200px;
+}
+
+.img-gb{
+  
+  width: 1300px;
+}

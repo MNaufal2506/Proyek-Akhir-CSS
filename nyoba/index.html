@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps - Masjid Darul Mu'alimin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="map-container">
+        <h2>Lokasi Masjid Darul Mu'alimin</h2>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            const masjidLocation = { lat: -6.2088, lng: 106.8456 }; // Ganti dengan koordinat yang sesuai
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: masjidLocation,
+            });
+            new google.maps.Marker({
+                position: masjidLocation,
+                map,
+                title: "Masjid Darul Mu'alimin",
+            });
+        }
+    </script>
+
+</body>
+</html>
